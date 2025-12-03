@@ -27,7 +27,6 @@ class SocialNetwork:
             return False
 
     def get_suggestions(self, user):
-        """Finds friend suggestions based on mutual friends."""
         if user not in self.network:
             return None
 
@@ -51,7 +50,6 @@ class SocialNetwork:
         return result
 
     def get_shortest_path(self, start, end):
-        """BFS to find the shortest path between two users."""
         if start not in self.network or end not in self.network:
             return None
 
